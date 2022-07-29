@@ -14,14 +14,14 @@ notify.getInterface(
       console.log('NotificationClosed', arguments);
     });
     nm.Notify(
-      'exampl',
+      'example',
       0,
       '',
       'summary 3',
       'new message text',
       ['xxx yyy', 'test2', 'test3', 'test4'],
       [],
-      5,
+      5000,
       function(err /*, id*/) {
         console.log(err);
         //setTimeout(function() { n.CloseNotification(id, console.log); }, 4000);
